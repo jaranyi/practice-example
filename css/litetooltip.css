@@ -1,0 +1,320 @@
+.litetooltip-wrapper {
+    position: absolute;
+    z-index: 10000;
+    display: block;
+    visibility: visible;
+    min-width: 100px;
+}
+
+.litetooltip-wrapper.incontainer {
+    position: relative;
+}
+
+.litetooltip-wrapper.incontainer .tooltip-content {
+    position: relative;
+}
+
+.litetooltip-wrapper.top, .litetooltip-wrapper.top-left, .litetooltip-wrapper.top-right {
+    margin-top: -3px;
+    padding: 5px 0px 10px 0px;
+}
+
+.litetooltip-wrapper.right, .litetooltip-wrapper.right-top, .litetooltip-wrapper.right-bottom {
+    margin-left: 3px;
+    padding: 0px 5px 0px 10px;
+}
+
+.litetooltip-wrapper.bottom, .litetooltip-wrapper.bottom-left, .litetooltip-wrapper.bottom-right {
+    margin-top: 3px;
+    padding: 10px 0px 5px 0px;
+}
+
+.litetooltip-wrapper.left, .litetooltip-wrapper.left-top, .litetooltip-wrapper.left-bottom {
+    margin-left: -3px;
+    padding: 0px 10px 0px 5px;
+}
+
+.litetooltip-wrapper .tooltip-arrow {
+    border-color: transparent;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.top {
+    margin-left: -8px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    border-width: 10px 8px 0px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.top-left {
+    margin-left: 8px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-width: 10px 8px 0px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.top-right {
+    margin-right: 8px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-width: 10px 8px 0px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.right {
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    border-width: 8px 10px 8px 0;
+}
+
+.litetooltip-wrapper .tooltip-arrow.right-top {
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-width: 8px 10px 8px 0;
+}
+
+.litetooltip-wrapper .tooltip-arrow.right-bottom {
+    margin-top: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 8px 10px 8px 0;
+}
+
+.litetooltip-wrapper .tooltip-arrow.bottom {
+    margin-left: -8px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    border-width: 0px 8px 10px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.bottom-left {
+    margin-left: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-width: 0px 8px 10px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.bottom-right {
+    margin-right: 8px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-width: 0px 8px 10px 8px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.left {
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    border-width: 8px 0px 8px 10px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.left-top {
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-width: 8px 0px 8px 10px;
+}
+
+.litetooltip-wrapper .tooltip-arrow.left-bottom {
+    margin-top: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-width: 8px 0px 8px 10px;
+}
+
+.litetooltip-wrapper .tooltip-content {
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.litetooltip-wrapper .tooltip-content .clear {
+    clear: both;
+}
+
+.litetooltip-wrapper .tooltip-content > p {
+    padding-left: 3px;
+}
+/******************************************/
+/*************** templates ****************/
+.litetooltip-wrapper .tooltip-menu {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+.litetooltip-wrapper .tooltip-menu ul, .litetooltip-wrapper .tooltip-menu ol {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.litetooltip-wrapper .tooltip-menu li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    float: left;
+    border: solid 1px;
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+}
+
+.litetooltip-wrapper .tooltip-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px;
+    clear: both;
+    min-width: 100%;
+    width: 100%;
+    float: left;
+}
+
+.litetooltip-wrapper .tooltip-menu li.last-child {
+    border-bottom: 0px;
+}
+
+.litetooltip-wrapper .image-right {
+    float: right;
+    margin: 0px 0px 0px 5px;
+    padding: 2px;
+}
+
+.litetooltip-wrapper .image-left {
+    float: left;
+    margin: 0px 5px 0px 0px;
+    padding: 2px;
+}
+
+.litetooltip-wrapper .video-wrapper {
+    padding-bottom: 56.26%;
+    position: relative;
+    width: 500px;
+}
+
+.litetooltip-wrapper .video-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    position: absolute;
+}
+
+.litetooltip-wrapper .template {
+    float: left;
+}
+
+.litetooltip-wrapper .template h4 {
+    margin: 0px;
+    padding: 2px 4px 4px 4px;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+}
+
+.litetooltip-wrapper .template p {
+    margin: 0px;
+    padding: 2px 4px;
+    display: block;
+    float: left;
+}
+
+.litetooltip-wrapper .template ul, .litetooltip-wrapper .template ol {
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+    list-style-position: inside;
+}
+
+.litetooltip-wrapper .template li {
+    padding: 2px 0px;
+}
+
+.litetooltip-wrapper .template p, .litetooltip-wrapper .template ul, .litetooltip-wrapper .template ol {
+    background: #fff;
+    color: #333;
+}
+
+.litetooltip-hotspot-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.litetooltip-hotspot-container {
+    position: relative;
+    height: 0px;
+}
+
+.litetooltip-hotspot-container img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.litetooltip-hotspot-container .hotspot {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.litetooltip-hotspot-container .hotspot .data-container {
+    display: none;
+}
+
+.litetooltip-hotspot-container .blink {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    animation: litetooltip_hotspot_blink .6s ease-in infinite;
+    -moz-animation: litetooltip_hotspot_blink .6s ease-in infinite;
+    -ms-animation: litetooltip_hotspot_blink .6s ease-in infinite;
+    -webkit-animation: litetooltip_hotspot_blink .6s ease-in infinite;
+}
+
+@keyframes litetooltip_hotspot_blink {
+    to {
+        opacity: 0.3;
+    }
+}
+
+@-webkit-keyframes litetooltip_hotspot_blink {
+    to {
+        opacity: 0.3;
+    }
+}
+
+@-moz-keyframes litetooltip_hotspot_blink {
+    to {
+        opacity: 0.3;
+        -moz-opacity: 0.3;
+    }
+}
+
+@-ms-keyframes litetooltip_hotspot_blink {
+    to {
+        opacity: 0.3;
+    }
+}
